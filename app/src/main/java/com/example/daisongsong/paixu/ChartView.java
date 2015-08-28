@@ -42,7 +42,8 @@ public class ChartView extends View {
         int widthPerCell = getWidth() / data.length;
 
 
-        Paint paint = new Paint(Color.BLUE);
+        Paint paint = new Paint();
+        paint.setColor(Color.BLUE);
         int height = getHeight();
         for (int i = 0; i < data.length; ++i) {
             int t = (int) (heightPerUnit * data[i]);
